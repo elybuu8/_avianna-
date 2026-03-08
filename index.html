@@ -1,101 +1,190 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>_avianaa🦋</title>
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+
+<style>
+
+/* PAGE */
+body{
+background-color:#feeff4;
+font-family:'Quicksand', sans-serif;
+text-align:center;
+margin:0;
+}
+
+/* TITLE */
+h1{
+font-family:'Pacifico', cursive;
+color:#000000;
+margin-top:20px;
+}
+
+/* NAVIGATION */
+nav a{
+text-decoration:none;
+color:#000000;
+font-weight:bold;
+margin:10px;
+padding:8px 12px;
+border-radius:12px;
+background-color:#fc94af;
+transition:0.3s;
+}
+
+nav a:hover{
+background-color:#ffb6c1;
+color:white;
+}
+
+/* INTERACTIVE IMAGE SECTION */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin:30px;
+}
+
+.pic-card{
+position:relative;
+width:250px;
+height:170px;
+overflow:hidden;
+border-radius:15px;
+cursor:pointer;
+}
+
+.pic-card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.5s;
+}
+
+.pic-card:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:10px;
+transform:translateY(100%);
+transition:0.4s;
+}
+
+.pic-card:hover .overlay{
+transform:translateY(0);
+}
+
+/* SCRAPBOOK CARDS */
+
+.scrapbook{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin:20px;
+}
+
+.card{
+background-color:#ffb6c1;
+border-radius:20px;
+width:220px;
+margin:15px;
+padding:15px;
+box-shadow:4px 4px 8px rgba(0,0,0,0.2);
+transition:transform 0.2s;
+}
+
+.card:hover{
+transform:rotate(-2deg) scale(1.05);
+}
+
+.card p{
+text-align:center;
+font-size:14px;
+}
+
+.card b{
+color:#000000;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<!-- PRELOADER -->
-<div id="preloader">
-    <div class="loader">
-        <div class="progress-bar"></div>
-    </div>
-    <p>Loading...</p>
+<h1>My Achievements</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="achievements.html"><span>Achievements</span></a>
+<a href="contact.html">Contact Info</a>
+</nav>
+
+<hr>
+
+<!-- INTERACTIVE IMAGES -->
+
+<div class="gallery">
+
+<a href="about.html">
+<div class="pic-card">
+<img src="about.jpg">
+<div class="overlay">
+<h3>About Me</h3>
+</div>
+</div>
+</a>
+
+<a href="achievements.html">
+<div class="pic-card">
+<img src="achievement.jpg">
+<div class="overlay">
+<h3>Achievements</h3>
+</div>
+</div>
+</a>
+
+<a href="contact.html">
+<div class="pic-card">
+<img src="contact.jpg">
+<div class="overlay">
+<h3>Contact Info</h3>
+</div>
+</div>
+</a>
+
 </div>
 
-<header>
-<h1>Websiteee ni Vinaaaa💋💋💋</h1>
-</header>
+<!-- SCRAPBOOK -->
 
-<section>
+<div class="scrapbook">
 
-<!-- PERSONAL DETAILS -->
-<h2>PERSONAL DETAILS</h2>
-<p><strong>Name:</strong> Alvina M. Villaruel</p>
-<p><strong>Age:</strong> 20 yrs old</p>
-<p><strong>Birthdate:</strong> Feb. 7, 2006</p>
-<p><strong>Sex:</strong> Female</p>
-<p><strong>Height:</strong> 4'10</p>
-<p><strong>Weight:</strong> 37kg</p>
-<p><strong>Religion:</strong> Catholic</p>
-<p><strong>Mother's Name:</strong> Radzhata Madjid</p>
-<p><strong>Father's Name:</strong> Inocencio Villaruel Jr.</p>
-<p><strong>Number of Siblings:</strong> 3 </p>
+<div class="card">
 
-<!-- FAVORITES -->
-<h2>FAVORITES</h2>
-<p><strong>Colors:</strong> Soft brown, blue, pastel colors</p>
-<p><strong>Action Movie:</strong> Jackie Chan's Movie</p>
-<p><strong>Kdrama:</strong> Lovely Runner, Hwarang, Goblin</p>
-<p><strong>Cdrama:</strong> A Love So Beautiful</p>
+<p><b>ACADEMIC ACHIEVEMENTS:</b></p>
 
-<p><strong>International Songs:</strong></p>
-<ul>
-<li>Party 4 U</li>
-<li>Beautiful by Bazzi</li>
-<li>About You by The 1975</li>
-<li>Message in a Bottle</li>
-<li>Statue</li>
-<li>All I Ever Need</li>
-</ul>
+<p><b>*</b> Grade 12 WITH HONORS</p>
 
-<p><strong>Filipino Songs:</strong></p>
-<ul>
-<li>Patutunguhan</li>
-<li>Ikot by October</li>
-<li>Sandali by MRLD</li>
-<li>Fallin by Exb</li>
-<li>Kung Tayo by Skusta</li>
-</ul>
+<p><b>*</b> Grade 4 ACHIEVER</p>
 
-<p><strong>Artists:</strong> Ariana Grande, Chris Brown, and Camilla Cabello</p>
-<p><strong>Foods:</strong> Pizza, fries, siomai, sinigang na bangus, and adobong manok</p>
-<p><strong>Drinks:</strong> Coke, Hazelnut Iced Coffee, Java Frappe, and Hot Pandesal Mate 😋</p>
-<p><strong>Hobbies:</strong> Listening to music, watching movies, reels, and mukbang</p>
+<p><b>*</b> Grade 3 STARSCOUT LEADER</p>
 
-<!-- ACHIEVEMENTS -->
-<h2>ACHIEVEMENTS</h2>
-<p>🏅 Consistent honor student in Elementary</p>
-<p>🏅 Grade 11 - with honors (2nd to 4th quarter)</p>
-<p>🏅 Grade 12 - graduated with honors</p>
-<p>🏆 First Place in Zumba</p>
-<p>🏆 Sabayang Pagbigkas Champion</p>
+</div>
 
-<!-- CONTACTS -->
-<h2>CONTACTS</h2>
-<p><strong>Facebook:</strong> Alvina Villaruel</p>
-<p><strong>Instagram:</strong> _avllrl</p>
-<p><strong>Phone Number:</strong> 09708693516</p>
-<p><strong>Gmail:</strong> alvinavillaruel276@gmail.com</p>
-<p><strong>Address:</strong> 105 B. Mariano St., Sta. Ana, San Mateo, Rizal</p>
-
-</section>
-
-<footer>
-<p>© 2026 Vinatogsskie 🎀</p>
-</footer>
-
-<script>
-window.addEventListener("load", function () {
-    setTimeout(function () {
-        document.body.classList.add("loaded");
-    }, 3000);
-});
-</script>
+</div>
 
 </body>
 </html>
+```
