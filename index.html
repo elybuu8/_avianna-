@@ -1,189 +1,102 @@
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
-
-<style>
-
-/* PAGE */
-body{
-background-color:#feeff4;
-font-family:'Quicksand', sans-serif;
-text-align:center;
-margin:0;
-}
-
-/* TITLE */
-h1{
-font-family:'Pacifico', cursive;
-color:#000000;
-margin-top:20px;
-}
-
-/* NAVIGATION */
-nav a{
-text-decoration:none;
-color:#000000;
-font-weight:bold;
-margin:10px;
-padding:8px 12px;
-border-radius:12px;
-background-color:#fc94af;
-transition:0.3s;
-}
-
-nav a:hover{
-background-color:#ffb6c1;
-color:white;
-}
-
-/* INTERACTIVE IMAGE SECTION */
-
-.gallery{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-margin:30px;
-}
-
-.pic-card{
-position:relative;
-width:250px;
-height:170px;
-overflow:hidden;
-border-radius:15px;
-cursor:pointer;
-}
-
-.pic-card img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:0.5s;
-}
-
-.pic-card:hover img{
-transform:scale(1.1);
-}
-
-.overlay{
-position:absolute;
-bottom:0;
-width:100%;
-background:rgba(0,0,0,0.6);
-color:white;
-padding:10px;
-transform:translateY(100%);
-transition:0.4s;
-}
-
-.pic-card:hover .overlay{
-transform:translateY(0);
-}
-
-/* SCRAPBOOK CARDS */
-
-.scrapbook{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-margin:20px;
-}
-
-.card{
-background-color:#ffb6c1;
-border-radius:20px;
-width:220px;
-margin:15px;
-padding:15px;
-box-shadow:4px 4px 8px rgba(0,0,0,0.2);
-transition:transform 0.2s;
-}
-
-.card:hover{
-transform:rotate(-2deg) scale(1.05);
-}
-
-.card p{
-text-align:center;
-font-size:14px;
-}
-
-.card b{
-color:#000000;
-}
-
-</style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>_avianaa🦋</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>My Achievements</h1>
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="loader">
+        <div class="progress-bar"></div>
+    </div>
+    <p>Loading...</p>
+</div>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Me</a>
-<a href="achievements.html"><span>Achievements</span></a>
-<a href="contact.html">Contact Info</a>
-</nav>
+<header>
+<h1>Websiteee ni Vinaaaa 💋💋💋</h1>
+</header>
 
-<hr>
+  <div class="gallery">
 
-<!-- INTERACTIVE IMAGES -->
-
-<div class="gallery">
-
-<a href="about.html">
+<a href="#PERSONAL">
 <div class="pic-card">
 <img src="about.jpg">
-<div class="overlay">
-<h3>About Me</h3>
-</div>
+<div class="overlay">Personal Details</div>
 </div>
 </a>
 
-<a href="achievements.html">
+<a href="#ACHIEVEMENTS">
 <div class="pic-card">
 <img src="achievement.jpg">
-<div class="overlay">
-<h3>Achievements</h3>
-</div>
+<div class="overlay">Achievements</div>
 </div>
 </a>
 
-<a href="contact.html">
+<a href="#CONTACTS">
 <div class="pic-card">
 <img src="contact.jpg">
-<div class="overlay">
-<h3>Contact Info</h3>
-</div>
+<div class="overlay">Contacts</div>
 </div>
 </a>
 
 </div>
 
-<!-- SCRAPBOOK -->
+<main>
 
-<div class="scrapbook">
+<section>
 
-<div class="card">
+<h2>PERSONAL DETAILS</h2>
+<p><strong>Name:</strong> Alvina M. Villaruel</p>
+<p><strong>Age:</strong> 20 yrs old</p>
+<p><strong>Birthdate:</strong> Feb. 7, 2006</p>
+<p><strong>Sex:</strong> Female</p>
+<p><strong>Height:</strong> 4'10</p>
+<p><strong>Weight:</strong> 37kg</p>
+<p><strong>Religion:</strong> Catholic</p>
+<p><strong>Mother's Name:</strong> Radzhata Madjid</p>
+<p><strong>Father's Name:</strong> Inocencio Villaruel Jr.</p>
 
-<p><b>ACADEMIC ACHIEVEMENTS:</b></p>
+<h2>FAVORITES</h2>
+<p>Color: soft brown, blue, pastel colors</p>
+<p>Action Movie: Jackie Chan's Movie</p>
+<p>Kdrama: Lovely Runner, Hwarang, Goblin</p>
+<p>Cdrama: A love so beautiful</p>
 
-<p><b>*</b> Grade 12 WITH HONORS</p>
+<h2>ACHIEVEMENTS</h2>
+<p>🏅 Consistent honor student in Elementary</p>
+<p>🏅 Grade 11 - with honors</p>
+<p>🏅 Grade 12 - graduated with honors</p>
+<p>🏆 First Place In Zumba</p>
+<p>🏆 Sabayang Pagbigkas Champion</p>
 
-<p><b>*</b> Grade 4 ACHIEVER</p>
+<h2>CONTACTS</h2>
+<p>Fb: Alvina Villaruel</p>
+<p>Ig: _avllrl</p>
+<p>Number: 09708693516</p>
+<p>Gmail: alvinavillaruel276@gmail.com</p>
 
-<p><b>*</b> Grade 3 STARSCOUT LEADER</p>
+</section>
 
-</div>
+</main>
 
-</div>
+<footer>
+<p>© 2026 Personal Website</p>
+</footer>
+
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.body.classList.add("loaded");
+    }, 3000);
+});
+</script>
 
 </body>
 </html>
